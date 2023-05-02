@@ -13,6 +13,9 @@ namespace Acme\Bundle\TestBundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\HttpKernel\Kernel;
+
+use Acme\Bundle\TestBundle\DependencyInjection\AcmeTestExtension;
+
 /**
  * @author Andy MacKay <andy@binarygeometry.co.uk>
  */
@@ -22,4 +25,15 @@ class AcmeTestBundle extends Bundle
     {
         parent::build($container);
     }
+
+    public function getContainerExtension()
+    {
+        return new AcmeTestExtension();
+    }
+
+    
+    // public function loadExtension(array $config, ContainerConfigurator $container, ContainerBuilder $builder): void
+    // {
+    //     $container->import(__DIR__ . '/Resources/config/services.xml');
+    // }
 }
