@@ -9,17 +9,17 @@
  * file that was distributed with this source code.
  */
 
-namespace Acme\Bundle\TestBundle;
+namespace BinaryGeometry\Bundle\SporeBundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\HttpKernel\Kernel;
 
-use Acme\Bundle\TestBundle\DependencyInjection\AcmeTestExtension;
+use BinaryGeometry\Bundle\SporeBundle\DependencyInjection\BinaryGeometrySporeExtension;
 
 /**
  * @author Andy MacKay <andy@binarygeometry.co.uk>
  */
-class AcmeTestBundle extends Bundle
+class BinaryGeometrySporeBundle extends Bundle
 {
     public function build(ContainerBuilder $container)
     {
@@ -28,7 +28,7 @@ class AcmeTestBundle extends Bundle
 
     public function getContainerExtension()
     {
-        return new AcmeTestExtension();
+        return new BinarygeometrySporeExtension();
     }
 
     

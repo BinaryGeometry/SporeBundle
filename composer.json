@@ -1,6 +1,6 @@
 {
-    "name": "acme/test-bundle",
-    "description": "This bundle provides a way to configure your controllers with annotations",
+    "name": "binary-geometry/spore-bundle",
+    "description": "This bundle provides a service to germinate spores",
     "keywords": ["annotations","controllers"],
     "type": "symfony-bundle",
     "license": "MIT",
@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Acme\\Bundle\\TestBundle\\": "src/"
+            "BinaryGeometry\\Bundle\\SporeBundle\\": "src/"
         }
     },
     "autoload-dev": {

@@ -25,3 +25,5 @@ psr-4 requires trailing slashes
             "Acme\\Bundle\\TestBundle\\": "src/"
         }
     },
+
+    https://macrini.medium.com/how-to-create-service-bundles-for-a-symfony-application-f266ecf01fca

@@ -1,6 +1,6 @@
 <?php
 
-namespace Acme\Bundle\TestBundle\Service;
+namespace BinaryGeometry\Bundle\SporeBundle\Service;
 
 class SporeGermination
 {
